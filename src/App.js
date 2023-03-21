@@ -28,6 +28,9 @@ function App() {
         },
         {
           path: '/friends',
+          loader:async ()=>{
+            return fetch('https://jsonplaceholder.typicode.com/users')
+          },
           element: <Friends></Friends>
         }
 

@@ -36,6 +36,10 @@ function App() {
     {
       path: '/about',
       element: <About></About>
+    },
+    {
+      path:'*',
+      element:<div>This route not found  404 </div>
     }
   ])
   return (
